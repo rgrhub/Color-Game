@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Color Game</title>
+</head>
+<body style="background-color: black">
+    <div class="jumbotron jumbotron-fluid py-0 mb-0" id="jumbobg" style="background-color: rgb(70, 104, 167)">
+        <div class="container text-center">
+          <p class="lead mb-0">THE GREAT</p>
+          <h1 class="display-4 font-weight-bold">Fluid jumbotron</h1>
+          <p class="lead mb-0">GUESSING GAME</p>
+        </div>
+    </div>
+    <div class="container-fluid d-flex px-sm-5"  style="background-color: whitesmoke">
+        <button type="button" class="btn btn-light mr-auto p-2">NEW COLORS</button>
+        <div id="guess" class="align-self-center mr-auto"></div>
+        <button type="button" class="btn btn-light">EASY</button>
+        <button type="button" class="btn btn-light active">HARD</button>
+        <a class="btn btn-light align-self-center" title="How To Play" href="https://en.wikipedia.org/wiki/RGB_color_model" target="_blank" role="button">?</a>
+    </div>
+    <section class="container">
+    <div class="p-2">
+        <div class="row mx-0 mb-2" style="height: 100px">
+            <div class="col rounded-lg" style="background-color: rgba(0,0,255)">
+            </div>
+            <div class="col rounded-lg mx-2" style="background-color: rgba(100,0,255)">
+            </div>
+            <div class="col rounded-lg" style="background-color: rgba(0,100,255)">
+            </div>
+        </div>
+        <div class="row mx-0" style="height: 100px">
+            <div class="col rounded-lg" style="background-color: rgba(200,0,255)">
+            </div>
+            <div class="col rounded-lg mx-2" style="background-color: rgba( 58,156,111)">
+            </div>
+            <div class="col rounded-lg" style="background-color: rgb(7, 160, 231)">
+            </div>
+        </div>
+    </div>
+    <!-- <p class="ml-2" style="color: whitesmoke;" id="try">LIVES: <span></span></p> -->
+</section>
+
+<script src="colorGame.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
